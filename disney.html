@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+ <link rel="stylesheet" href="jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+<style type="text/css">
+
+  #content{
+	  height:2500px;
+	  width:1030px;
+	  margin:0px auto;
+      }
+  #guide{
+	  margin-top:-90px;
+	  margin-left:100px;
+	  }
+  #guide span{
+	  padding:13px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #log{
+	  font-size:14px;
+	  color:#FF9D01;
+	  margin-top:-30px;
+	  margin-left:150px;}
+  #login{
+	  color:#FF9D01;
+	  text-decoration:none;}
+  #shares{
+	  margin-top:30px;
+      margin-left:660px;
+	  }
+  #share{
+	  margin-left:7px;}
+  .titleline{
+      position:relative;
+	  top:50px;
+	  font-size:16px;
+	  color:#6C6C6C;
+	  font-family:黑体;
+	  }	  
+  #guide a{
+	  color:#6C6C6C;
+	  text-decoration:none;
+	  font-family:黑体;}
+  #guide a:hover{
+	  padding:10px;
+	  color:white;
+	  background-color:#FF9D00;}
+
+  #size1{
+	font-size:15px;
+	color:#333;
+	}
+  #size2{
+	  font-size:12px;
+	  color:#666;}
+ #second{
+	 position:absolute;
+	 top:400px;	 
+	 width:250px;
+	 height:100px;
+	 background-color:#080803;
+	 padding:12px;
+	 border-radius:7px;
+	 opacity:0.7;
+	 }
+  #sndfont{
+	  position:absolute;
+	 font-size:15px;
+	 width:250px;
+	 color:white;
+	 top:420px;
+	 left:170px;}	 
+	 
+ a{
+	 text-decoration:none;
+	 }	  
+ a:hover{
+	 background-color:#F7F7F7;
+	 color:red;
+	 }
+ #third{
+	 margin-top:70px;
+	 color:#333;
+	 padding-bottom:30px;
+ }
+ #four{
+	 margin-top:30px;
+	 color:#333;}
+  select{
+	   border-radius:7px;
+      }	
+  .com{
+	  padding-right:30px;} 	 
+  #comment{
+	  padding-bottom:50px;}
+  #ge{
+	  width:100px;
+	  margin-left:20px;}
+  #tao{
+	  width:100px;
+	  margin-left:20px;  }
+  #gepic{
+	  width:800px;
+	  margin-top:30px;
+	  margin-left:175px;
+	  padding-bottom:50px;}
+  #taotou{
+	  }
+   .tab{
+	 margin:0px;
+	 padding:0px;
+	 list-style:none;
+	 line-height:30px;
+	 }
+   #buttom{
+	 height:360px;
+	 background-color:#3E3E3E;
+	 color:#7A7A7A;
+	 font-size:14px;
+	 margin-top:60px;
+	 }	
+   #butt{
+	 float:left;
+	 font-size:13px;
+	 margin-left:110px;
+	 margin-top:50px;
+	 width:300px;
+	 height:200px;
+	 }
+   .color{
+	 color:#FF9900;
+	 }	
+   #one{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	 margin-top:50px;
+	 margin-left:-60px;
+	 }
+   #one1{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	 margin-top:50px;
+	 }	
+   #but4{
+	 position:absolute;
+	 font-size:13px;
+	 float:left;
+	 margin-top:70px;
+	 }
+   #two{
+	 float:left;
+	 font-size:13px;
+	 margin-top:50px;
+	 margin-left:30px;
+	 width:300px;
+	 height:200px;
+	 }
+  #logo{
+	float:left;
+	position:absolute;
+	margin-left:220px;
+	margin-top:280px;
+	}
+  #but1{
+	float:left;
+	position:absolute;
+	font-size:10px;
+	margin-left:300px;
+	margin-top:310px;
+	}
+	
+ #lt a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+  #lt a:hover{
+		padding:10px;
+		color:white;
+		background-color:#FF9D00;}
+  #btfont{
+	  width:1000px;
+	  margin:0px auto;}	
+  #caozuo{
+	  width:250px;
+	  position:absolute;
+	  left:990px;
+	  top:100px;}
+</style>
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+  } );
+  </script>
+
+<body>
+<div id="content">
+    <img src="logo.png">
+      <div id="guide"> 
+        <span class="titleline"><a href="index.html">首页</a></span>
+        <span class="titleline" id="where"><a href="where.html">去哪里</a></span> 
+        <span class="titleline" id="how"><a href="how.html">怎么去</a></span> 
+        <span class="titleline" id="live"><a href="live.html">住哪里</a></span> 
+        <span class="titleline" id="friends"><a href="chat.html">游友圈</a></span>
+      </div>
+      <div id="shares">
+        <img class="share" src="qq.png" width="10%">
+        <img class="share" src="weibo.png" width="10%"> 
+        <img class="share" src="weixin.png" width="10%">
+        <div id="log"><a id="login" href="#">登录</a> | <a id="login" href="#">注册</a></div>
+      </div>
+<div>
+  <div><h2>迪士尼好莱坞酒店(Disney's Hollywood Hotel)</h2></div>
+  <div id="caozuo"><a href="#"><img src="收藏.PNG"></a><a href="#"><img src="点评.PNG"></a></div>
+  <div id="size1">Dsney Hollywood Hotel<img src="king.PNG"></div>
+  <div id="size2">地址：大屿山香港迪士尼乐园度假区</div>
+</div>
+  <div>
+    <div style=" position:absolute; float:left; background:url(1.jpeg); width:697px; height:370px;"></div>
+    <div style="margin-left:710px;"><img src="222.png"/>&nbsp;<img src="333.png"/></div>
+    <div style="margin-left:710px;"><img src="444.png"/>&nbsp;<img src="555.png"/></div>
+    <div style="margin-left:710px;"><img src="666.png"/>&nbsp;<img src="7.png"/></div>
+  </div>
+  <div id="first"></div>
+  <div id="second"></div>
+  <div id="sndfont">整个迪士尼好莱坞酒店是以米奇为主题的，到处都是米奇的造型，酒店环境非常好，还有钢琴琴键做池底的游泳池，漂亮极了。</div>
+ <div id="lt" style="margin-top:20px;">
+ <span style="margin-left:20px; background-color:#FF9D00; padding:15px; border-radius:6px;"><a href="#">预订</a></span>
+ <span style="margin-left:80px;"><a href="#">位置</a></span>
+ <span style="margin-left:80px;"><a href="#">攻略</a></span>
+ <span style="margin-left:80px;"><a href="#">点评</a></span>
+ <span style="margin-left:80px;"><a href="#">周边酒店</a></span>
+ </div>
+ <div style="margin-top:20px;">
+   <input type="text" size="20" style="height:30px;" placeholder=" 入住时间" id="datepicker" />
+   <input type="text" size="20" style="height:30px; margin-left:15px;" placeholder=" 离住时间" id="datepicker2"/>
+   <select style="height:30px;margin-left:15px;">
+   <option>入住人数</option>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   <option>5</option>
+   <option>6</option>
+   <option>7</option>
+   </select>
+   <select style="height:30px;margin-left:15px;">
+   <option>成人</option>
+   <option>儿童</option>
+   </select>
+   <input type="button" value="查看价格" style="height:40px; border-radius:7px; width:80px; background-color:#FFB200; color:#FFF; border:0px; margin-left:20px;"/>
+ </div>
+ <div style="margin-top:20px;"><img src="8.png"/></div>
+ <div><a href=""><img src="10.png"/></a></div>
+ <div><a href=""><img src="11.png"/></a></div>
+ <div style="margin-top:30px;"><img src="9.png"/></div>
+ <div id="third">
+ <span>基本信息</span>
+ <span style="margin-left:120px; font-size:14px">入住时间: 15:00之后</span>
+ <span style="margin-left:30px; font-size:14px">离店时间: 11:00之前</span>
+ <span style="margin-left:30px; font-size:14px">建成于: 2005年</span>
+ <span style="margin-left:40px; font-size:14px">酒店规模: 600间客房</span>
+ </div>
+ <hr/>
+ <div id="four">
+   <span>酒店攻略</span>
+   <div style="margin-top:-20px; font-size:14px; margin-left:180px; width:845px">设有餐厅、商店、酒吧、钢琴形游泳池，而池畔更设有一个可供游客欣赏日落景致的"日落台"。最引人注目的就是设计有如洛杉矶地图的花园，其中有模彷荷里活建造的著名街道、建筑物及标志。沿途更有国际巨星及本地著名艺人的掌印及脚印倒模，酒店共分为花园景、乐园景和海景房间三种。</div>
+ </div>
+ <div><h2>用户评论</h2></div>
+ <div id="comment">
+ <a href="#"><span class="com">全部评论</span></a>
+ <a href="#"><span class="com">相关游记</span></a>
+ </div>
+ <div id="ge">
+ <div><img src="小葛.png"></div>
+ <span style="margin-left:13px;">小葛</span></div>
+ <div style="margin-left:175px; font-size:15px; margin-top:-80px; color:#666; width:850px;">香港迪士尼度假区里边总共有两家酒店（现在第三家快建好了）。香港迪士尼度假区里边总共有两家酒店（现在第三家快建好了）。好莱坞酒店是四星级的，据说定位就是给大陆游客的。。。所以酒店的价位和舒适程度都比乐园酒店第一个档次，但是性价比高呀！</div>
+ <div id="gepic"><img src="小葛1.PNG" width="350">&nbsp;&nbsp;<img src="小葛2.PNG" width="350"></div>
+  <div id="tao">
+ <div><img src="tao.png"></div>
+ <span style="margin-left:15px;">小涛</span></div>
+ <div style="margin-left:175px; font-size:15px; margin-top:-80px; color:#666; width:850px;">酒店布置也非常舒适豪华充满童趣，米老鼠造型的装饰无处不在，这让以前从没接触过米老鼠的潼一下子喜欢上了它，商店里也是琳琅满目的卡通商品，唐老鸭、维尼熊、白雪公主等应有尽有。这里简直就是童话的王国。酒店每天有数量大巴穿梭往返与酒店和乐园之间免费接送游客，非常便利。</div>
+ <div id="gepic"><img src="tao1.jpg" width="350">&nbsp;&nbsp;<img src="tao2.jpg" width="350"></div>
+</div>
+  <div id="buttom">
+    <div id="btfont">
+  <div id="butt">
+   <ul class="tab">
+    <li>中国领先的自由服务平台</li>
+    <li>覆盖全球200多个国家和地区</li>
+    <li><span class="color">1000,100,100</span>位旅行者</li>
+    <li><span class="color">920,000</span>家国际酒店</li>
+    <li><span class="color">21,000,000</span>条真实点评</li>
+    <li><span class="color">382,000,000</span>次攻略下载</li>
+    <li><span class="color">中国旅游行业第一部“玩法”</span></li>
+   </ul>
+  </div>
+  <div id="two">
+   <ul class="tab">
+    <li>关于我们</li>
+    <li>关于出去看看</li>
+    <li>网络信息侵权通知指引</li>
+    <li>隐私政策</li>
+    <li>服务协议</li>
+    <li>联系我们</li>
+    <li><span class="color">加入看看</span></li>
+   </ul>
+  </div>
+   
+   <div id="one">
+    <ul class="tab">
+     <li>旅游攻略</li>
+     <li>旅游特价</li>
+     <li>旅游问答</li>
+     <li>旅游指南</li>
+     <li>旅游资讯</li>
+     <li>旅行服务</li>
+    </ul>
+   </div>
+   <div id="one1">
+    <ul class="tab">
+     <li>酒店预订</li>
+     <li>国际租车</li>
+     <li>旅游保险</li>
+     <li>订火车票</li>
+     <li>APP下载</li>
+    </ul>
+   </div>
+   <div id="but4" style="margin-left:777px;margin-top:205px;"><span class="color">全球供应商入住</span></div>
+   
+   <div id="logo"><img src="images/logo.png"/></div>
+   <div id="but1">© 2017 Chuqukankan.cn 京丨CP备 京东网安备11015476号 京丨CP证110318号<br/>
+   营业执照 新网出证（京）字242号 全国统一客服电话：<span class="color">4006—345—678 网站地图</span></div>
+ </div></div>
+</body>
+</html>

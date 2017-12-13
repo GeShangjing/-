@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+  #content{
+	  height:1500px;
+	  width:960px;
+	  margin:0px auto;
+      }
+  #title{
+	  background-color:#FF9D01;
+	  color:white;}
+  #friends{
+	  background-color:#FF9D01;}
+  #guide{
+	  margin-top:-50px;
+	  margin-left:100px;
+	  }
+  #guide span{
+	  padding:13px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #guide a{
+	  color:#6C6C6C;
+	  text-decoration:none;
+	  font-family:黑体;}
+  #guide a:hover{
+	  padding:10px;
+	  color:white;
+	  background-color:#FF9D00;}
+  span{
+	  padding-left:25px;
+	  padding-right:25px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  border-radius:5px;
+	  }
+  .log{
+	  font-size:14px;
+	  margin-top:-25px;
+	  margin-left:150px;
+	  color:#FF9D01;}
+  a{
+	  text-decoration:none;}
+  #login{
+	  color:#FF9D01;
+	  }
+  #shares{
+	  margin-top:-20px;
+      margin-left:630px;
+	  }
+  .share{
+	  margin-left:7px;}
+  #txt{
+	  height:35px;
+	  width:600px;
+	  border-radius:5px;
+	  color:#666;
+	  margin-left:15px;}
+  #search{
+	  height:50px;
+	  width:1000px;
+	  margin-top:50px;
+	  }
+  #btn1{
+	  width:90px;
+	  height:40px;
+	  position:absolute;
+	  top:112px;
+	  left:830px;
+	  }
+  #btn2{
+	  width:110px;
+	  height:40px;
+	  position:absolute;
+	  top:112px;
+	  left:948px;
+	  }
+  #sele{
+	  font-size:15px;
+	  margin-top:10px;}
+  #sele a{
+	  color:#6C6C6C;
+	  text-decoration:none;
+	  font-family:黑体;}
+  #sele a:hover{
+	  padding:10px;
+	  color:white;
+	  background-color:#FF9D00;} 
+  .asktime{
+	  padding-left:20px;
+	  padding-right:20px;
+	  padding-top:5px;
+	  padding-bottom:5px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  background-color:#FF9D01;
+	  border-radius:5px;
+	  color:white;}
+  #wdzt{
+	  margin-top:20px;
+	  margin-left:15px;
+	  font-weight:bold;}
+  #gd{
+	  margin-top:-20px;
+	  margin-left:900px;
+	  font-size:14px;
+	  }
+  .bq{
+	  width:50px;
+	  height:25px;
+	  margin-left:15px;}
+  li{
+	  line-height:30px;
+	  font-size:14px;}
+  #wenti{
+	  margin-left:-25px;}
+  #wenti a{
+	  color:#6C6C6C;
+	  text-decoration:none;
+	  font-family:黑体;}
+  #wenti a:hover{
+	  padding:10px;
+	  color:white;
+	  background-color:#FF9D00;}  
+  #wttable{
+	  font-size:14px;
+	  margin-top:20px;}
+  .d{
+	  font-size:12px;
+	  color:#333;
+	  text-align:right;}
+  #load{
+	  text-align:center;
+	  background-color:#DADADA;
+	  height:30px;
+	  border-radius:6px;
+	  color:#333;
+	  margin-top:110px;
+	  font-size:14px;
+	  }
+
+</style>
+</head>
+
+<body>
+  <div id="content">
+    <img src="logo.png">
+      <div id="guide"> 
+        <span class="titleline"><a href="#">首页</a></span>
+        <span class="titleline" id="where"><a href="#">去哪里</a></span> 
+        <span class="titleline" id="how"><a href="#">怎么去</a></span> 
+        <span class="titleline" id="live"><a href="#">住哪里</a></span> 
+        <span class="titleline" id="friends"><a href="#">游友圈</a></span>
+      </div>
+      <div id="shares">
+        <img class="share" src="qq.png" width="10%">
+        <img class="share" src="weibo.png" width="10%"> 
+        <img class="share" src="weixin.png" width="10%">
+        <div class="log"><a id="login" href="#">登录</a> | <a id="login" href="#">注册</a></div>
+      </div>
+    <div id="main">
+    <div id="search">
+      <input type="text" id="txt" value=" 提问前不妨先搜索一下，看看你的问题是否有人已经问过了" onClick="txt()"/>
+      <input type="image" id="btn1" src="search.png" />
+      <input type="image" id="btn2" src="ask.png" />
+    </div> 
+    <div id="sele">
+      <span class="asktime"><a href="#">问答时间</a></span>
+      <span><a href="#">我的主页</a></span>
+    </div>
+    <div id="wdzt">问答专题</div>
+    <div id="gd"><a href="#">更多>></a></div>
+    <div id="wdtable">
+      <table cellspacing="18" width="720">
+        <tr>
+          <td rowspan="3"><img src="问答专题.png"></td>
+          <td><h3>当国庆遇上中秋，8天小长假该怎么玩？</h3></td>
+        </tr>
+        <tr>
+          <td>
+            <li>十一出去玩是一种怎样的体验？</li>
+            <li>国庆哪里人少最美？</li>
+            <li>今年各地中秋节有没有什么活动？</li>
+            <li>国庆人很多，怎样订到便宜的酒店和机票？</li>
+          </td>
+        </tr>
+        <tr>
+          <td><img class="bq" src="标签1.png"><img class="bq" src="标签2.png"><img class="bq" src="标签3.png"><img class="bq" src="标签4.png"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="wenti">
+      <span><a href="#">最新问题</a></span>
+      <span class="asktime"><a href="#">热门问题</a></span>
+      <span><a href="#">待回答问题</a></span>
+    </div>
+    <div id="wttable">
+      <table width="960" cellpadding="10">
+        <tr>
+          <td rowspan="3"><img src="1.png" width="70"></td>
+          <td>十一准备和朋友去敦煌旅游，看有三台演出，《丝路花雨》《敦煌盛典》《又见敦煌》，...</td>
+          <td class="d">2017-09-12</td>
+        </tr>
+        <tr><td colspan="2" align="right" class="d">M51***3309</td></tr>
+        <tr><td><img src="bq11.png">&nbsp;&nbsp;<img src="bq12.png">&nbsp;&nbsp;<img src="bq13.png"></td></tr>
+        <tr>
+          <td rowspan="3"><img src="2.png" width="70"></td>
+          <td>跟家里人出来玩他们想看敦煌盛典，那是什么啊？无聊嘛？</td>
+          <td class="d">2017-09-14</td>
+        </tr>
+        <tr><td colspan="2" align="right" class="d">M22***3459</td></tr>
+        <tr><td><img src="bq13.png"></td></tr>
+        <tr>
+          <td rowspan="3"><img src="3.png" width="70"></td>
+          <td>9月16日去丽江和香格里拉，那里天气怎么样？</td>
+          <td class="d">2017-09-17</td>
+        </tr>
+        <tr><td colspan="2" align="right" class="d">M18***1109</td></tr>
+        <tr><td><img src="bq31.png">&nbsp;&nbsp;<img src="bq32.png"></td></tr>
+                <tr>
+          <td rowspan="3"><img src="4.png" width="70"></td>
+          <td>请问5岁的孩子游故宫，不想在现场买票耽误时间，网上买成人票可以吗？</td>
+          <td class="d">2017-09-11</td>
+        </tr>
+        <tr><td colspan="2" align="right" class="d">A58***1265</td></tr>
+        <tr><td><img src="bq41.png">&nbsp;&nbsp;<img src="bq42.png">&nbsp;&nbsp;<img src="bq43.png"></td></tr>
+                <tr>
+          <td rowspan="3"><img src="5.png" width="70"></td>
+          <td>国庆放假想去大理、丽江、昆明、香格里拉，怎样安排？</td>
+          <td class="d">2017-09-15</td>
+        </tr>
+        <tr><td colspan="2" align="right" class="d">B28***1769</td></tr>
+        <tr><td><img src="bq31.png">&nbsp;&nbsp;<img src="bq51.png"></td></tr>        
+      </table>
+    </div>
+    <div id="load">加载更多...</div></div>
+  </div>
+  
+
+</body>
+</html>

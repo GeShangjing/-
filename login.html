@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+  body{
+	  background-image:url(b1.jpg);}
+  #main{
+	  height:200px;
+	  width:500px;
+	  margin:0px auto;
+	  margin-top:100px;
+	  margin-left:500px;
+	  }
+  .error{
+    color:#044E7F;
+	font-size:small;}
+  .txt{
+	  height:20px;
+	  border:0px;
+	  border-bottom:1px solid;
+	  background:none;
+	  text-align:center;
+	  }
+  .btn{
+	  height:30px;
+	  width:70px;
+	  border-radius:7px;
+	  border:0px;}
+  #logo{
+	  margin-left:300px;
+	  margin-top:100px;}
+</style>
+</head>
+
+<body>
+  <div id="logo"><img src="logo.png"><img src="fontlogo.png"></div>
+  <div id="main">  
+  <form id="frm" name="fr" action="index.html" method="get" />
+    <table cellpadding="10">
+      <tr>
+        <td>用户：</td>
+        <td><input type="text" id="userr" name="user" class="txt"/></td>
+      <tr>
+        <td></td>
+        <td><span id="errorUser" class="error"></span></td>
+      </tr>
+      </tr>
+      <tr>
+        <td>密码：</td>
+        <td><input id="pwdd" type="password" name="pwd" class="txt"/></td>
+      <tr>
+        <td></td>
+        <td><span id="errorPwd" class="error"></span></td>
+      </tr>
+      </tr>
+      <tr>
+        <td align="center" colspan="2"><input type="button" value="登录" id="log" class="btn"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button"  value="注册" id="btnr" class="btn"/></td>
+      </tr>
+    </table>
+  </form>
+  </div>
+  
+  <script type="text/javascript">
+	function getValue(controlName){
+	  var result='';
+	  
+	  var alls=document.location.search.substr(1);
+	  var arrs=alls.split('&');
+	  for(var i=0;i<arrs.length;i++){
+		var res=arrs[i].split('=');
+		  if(res[0]==controlName){
+			 result=decodeURI(res[1]);
+		  }
+	  }
+	  return result;
+  }
+	
+	window.onload=function(){	
+	  //var f=document.fr;
+	  userr.focus();
+	  var u=document.getElementById('errorUser');
+	  var p=document.getElementById('errorPwd');
+	  var pw=document.getElementById('pwdd');
+	
+	  document.getElementById('userr').onblur=function(){  
+	    var us=document.getElementById('userr');
+		var uu=getValue('user');
+		if(!us.value){
+		  u.innerHTML='用户名不能为空！';
+		  userr.select();
+		  return false;	
+		}
+		else if(us.value!==uu){
+		  u.innerHTML='用户名输入有误！';
+		  userr.select();
+		  return false; 	  
+		}  
+		else{	 	
+          u.innerHTML='';
+		  pw.focus();}
+		};
+		  
+	  document.getElementById('pwdd').onblur=function(){
+	    
+		var pd=getValue('pwd');
+        if(!pw.value){
+		  p.innerHTML='密码不能为空！';
+		  pw.select();
+		  return false;	
+		}
+		else if(pw.value!==pd){
+		  p.innerHTML='密码输入有误！';
+		  pd.select();
+		  return false; 	  
+		} 
+		else{
+		  p.innerHTML='';}
+		}
+		
+	  document.getElementById('btnr').onclick=function(){
+	    document.location.href="sign.html";	  
+	  }
+	  
+	  document.getElementById('log').onclick=function(){
+        if(u.innerHTML=='' && p.innerHTML==''){	  
+	      document.getElementById('frm').submit();
+		}
+		else{
+		  alert('您还未正确填写登录信息！');}
+	  };
+		  
+	 };
+	  
+
+	  
+	  	
+	
+  </script>
+</body>
+</html>
+

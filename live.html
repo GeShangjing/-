@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+ <link rel="stylesheet" href="jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <style type="text/css">
+  #title{
+	  background-color:#FF9D01;}
+  #guide{
+	  margin-top:-90px;
+	  margin-left:130px;
+	  width:1000px;}
+  #guide span{
+	  padding:15px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #log{
+	  font-size:14px;
+	  margin-top:-20px;
+	  margin-left:830px;
+	  color:#FF9D01;}
+  #login{
+	  color:#FF9D01;
+	  text-decoration:none;}
+  #shares{
+	  margin-top:23px;
+      margin-left:900px;
+	  width:300px;
+	  }
+  #share{
+	  margin-left:7px;}
+  #font{
+	  text-align:center;
+	  padding:40px;
+	  }
+  #font span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #hotelcount{
+	  text-align:center;
+	  padding:30px;
+	  }
+  #hotelcount span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #guide{
+	  margin-top:-90px;
+	  margin-left:350px;
+	  }
+  #guide span{
+	  padding:13px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #log{
+	  font-size:14px;
+	  color:#FF9D01;
+	  margin-top:-30px;
+	  margin-left:150px;}
+  #login{
+	  color:#FF9D01;
+	  text-decoration:none;}
+  #shares{
+	  margin-top:30px;
+      margin-left:860px;
+	  }
+  #share{
+	  margin-left:7px;}
+  .titleline{
+      position:relative;
+	  top:50px;
+	  font-size:16px;
+	  color:#6C6C6C;
+	  font-family:黑体;
+	  }	  
+  #guide a{
+	  color:#6C6C6C;
+	  text-decoration:none;
+	  font-family:黑体;}
+  #guide a:hover{
+	  padding:10px;
+	  color:white;
+	  background-color:#FF9D00;}
+	  #font a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#font a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;}
+ #first{
+	 height:70px;
+	 padding-left:170px;
+	 padding-top:50px;
+	 }
+ #img{
+	 position:absolute;
+	 top:120px;
+	 left:990px;
+	 }
+ #name{
+	 height:30px;
+	 font-size:23px;
+	 font-weight:bold;
+	 margin-left:600px;
+	 }
+ #font1{
+	 height:40px;
+	 font-size:16px;
+	 }
+	 #hotelcount a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#hotelcount a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;}
+ #ph{
+	 margin-left:150px;
+	 height:280px;
+	 }
+ .tab{
+	 margin:0px;
+	 padding:0px;
+	 list-style:none;
+	 line-height:30px;
+	 }
+ #buttom{
+	 background-color:#3E3E3E;
+	 color:#7A7A7A;
+	 font-size:14px;
+	 }	 
+ #second{
+	 float:left;
+	 margin-left:200px;
+	 width:300px;
+	 height:200px;
+	 }
+ .color{
+	 color:#FF9900;
+	 }	
+ #third{
+	 text-align:center;
+	 }
+ #one{
+	 float:left;
+	 width:100px;
+	 }	 
+ #two{
+	 float:left;
+	 width:300px;
+	 height:200px;
+	 }	 	  	 	 	 	  
+ </style>
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+	$( "#datepicker2" ).datepicker();
+  } );
+  </script>
+
+<body>
+<div>
+   <div id="head">
+    <img src="logo.png" style="margin-left:280px">
+      <div id="guide"> 
+        <span class="titleline"><a href="index.html">首页</a></span>
+        <span class="titleline" id="where"><a href="where.html">去哪里</a></span> 
+        <span class="titleline" id="how"><a href="how.html">怎么去</a></span> 
+        <span class="titleline" id="live"><a href="live.html">住哪里</a></span> 
+        <span class="titleline" id="friends"><a href="chat.html">游友圈</a></span>
+      </div>
+      <div id="shares">
+        <img class="share" src="qq.png" width="10%">
+        <img class="share" src="weibo.png" width="10%"> 
+        <img class="share" src="weixin.png" width="10%">
+        <div id="log"><a id="login" href="#">登录</a> | <a id="login" href="#">注册</a></div>
+      </div>
+  <div id="first">
+   <input type="text" size="30" placeholder=" 出行的目的地" style="height:33px; margin-left:25px;"/>
+   <input type="text" size="20" placeholder=" 入住日期" id="datepicker" style="height:33px; margin-left:25px""/>
+   <input type="text" size="20" placeholder=" 离住日期" id="datepicker2" style="height:33px; margin-left:25px"/>
+   <select style="height:30px;margin-left:15px;">
+   <option>入住人数</option>
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+
+   </select>
+   <input type="image" src="search1.png" id="img">
+  </div>
+  <div id="name">主题酒店</div>
+  <div id="font">
+   <span class="hotel"><a href="#">朝拜历史</a></span>
+   <span class="hotel"><a href="#">爱彼迎秋季推荐</a></span>
+   <span class="hotel"><a href="#">吃货根据地</a></span>
+   <span class="hotel"><a href="#">迪士尼乐园</a></span>
+   <span class="hotel"><a href="#">周末好去处</a></span>
+  </div>
+  <div id="ph">
+   <img src="成都.PNG"/>
+   <img src="西安.PNG"/>
+   <img src="重庆.PNG"/>
+  </div>
+  <div id="ph">
+   <img src="长沙.PNG"/>
+   <img src="澳门.PNG"/>
+   <img src="兰州.PNG"/>
+  </div>
+  <div id="name">特价酒店</div>
+  <div id="hotelcount">
+  <span class="city"><a href="#">曼谷</a></span>
+  <span class="city"><a href="#">台北</a></span>
+  <span class="city"><a href="#">东京</a></span>
+  <span class="city"><a href="#">香港</a></span>
+  <span class="city"><a href="#">首尔</a></span>
+  <span class="city"><a href="#">新加坡</a></span>
+  </div>
+  <div id="ph">
+   <a href="disney.html"><img src="香港1.PNG"/></a>
+   <img src="香港2.PNG"/>
+   <img src="香港3.PNG"/>
+   <img src="香港4.PNG"/>
+  </div>
+  <div id="ph">
+   <img src="香港5.PNG"/>
+   <img src="香港6.PNG"/>
+   <img src="香港7.PNG"/>
+   <img src="香港8.PNG"/>
+  </div>
+  <div id="buttom">
+  <div id="second">
+   <ul class="tab">
+    <li>中国领先的自由服务平台</li>
+    <li>覆盖全球200多个国家和地区</li>
+    <li><span class="color">1000,100,100</span>位旅行者</li>
+    <li><span class="color">920,000</span>家国际酒店</li>
+    <li><span class="color">21,000,000</span>条真实点评</li>
+    <li><span class="color">382,000,000</span>次攻略下载</li>
+    <li><span class="color">中国旅游行业第一部“玩法”</span></li>
+   </ul>
+  </div>
+  <div id="two">
+   <ul class="tab">
+    <li>关于我们</li>
+    <li>关于出去看看</li>
+    <li>网络信息侵权通知指引</li>
+    <li>隐私政策</li>
+    <li>服务协议</li>
+    <li>联系我们</li>
+    <li><span class="color">加入看看</span></li>
+   </ul>
+  </div>
+  <div style="width:500px; margin-left:700px; height:200px;">
+   <div style="margin-left:150px;">旅行服务</div>
+   <div id="one">
+    <ul class="tab">
+     <li>旅游攻略</li>
+     <li>旅游特价</li>
+     <li>旅游问答</li>
+     <li>旅游指南</li>
+     <li>旅游资讯</li>
+    </ul>
+   </div>
+   <div id="">
+    <ul class="tab">
+     <li>酒店预订</li>
+     <li>国际租车</li>
+     <li>旅游保险</li>
+     <li>订火车票</li>
+     <li>APP下载</li>
+    </ul>
+   </div>
+   <div style="margin-left:130px;"><span class="color">全球供应商入住</span></div>
+  </div>
+  <div>
+  <div id="third">
+   <div><img src="logo.png"/></div>
+   <div>© 2017 Chuqukankan.cn 京丨CP备 京东网安备11015476号 京丨CP证110318号</div>
+   <div>营业执照 新网出证（京）字242号 全国统一客服电话：<span class="color">4006—345—678 网站地图</span></div>
+  </div>
+  </div>
+ </div> 
+</div>
+</body>
+</html>

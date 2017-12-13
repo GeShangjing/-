@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>出去看看自由行</title>
+<style>
+  #content{
+	  height:3000px;
+	  width:1000px;
+	  margin:0px auto;
+      }
+	  
+  #first{
+	  background-color:#FF9D01;}
+  #guide{
+	  margin-top:-90px;
+	  margin-left:100px;
+	  }
+  #guide span{
+	  padding:13px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #log{
+	  font-size:14px;
+	  margin-top:-30px;
+	  margin-left:850px;
+	  color:#FF9D01;}
+  #login{
+	  color:#FF9D01;
+	  text-decoration:none;}
+  #shares{
+	  margin-top:30px;
+      margin-left:660px;
+	  }
+  #share{
+	  margin-left:7px;}
+	  
+	  
+  *{margin: 0;padding:0; }
+  ul{list-style: none;}
+  .banner{
+	  width: 960px;
+	  height: 450px;
+	  margin: 100px auto;
+	  margin-top:50px;
+	  position: relative;
+	  overflow: hidden;
+	  z-index:1;
+	  }
+  .img{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index:1;
+	  }
+  .img li{float: left;z-index:1;}
+  .num{
+	  position: absolute;
+	  bottom: 10px;
+	  width: 100%;
+	  text-align: center;
+	  font-size: 0;
+	  z-index:2;
+	  }
+  .num li{
+	  width: 10px;
+	  height: 10px;
+	  background:rgba(0,0,0,0.5);
+	  display: block;
+	  border-radius: 100%;
+	  display: inline-block;
+	  margin: 0 5px;
+	  cursor: pointer;
+	  }
+  .btn{display: none;}
+  .btn span{
+	  display: block;
+	  width: 50px;
+	  height: 100px;
+	  background: rgba(0,0,0,0.6);
+	  color: #fff;
+	  font-size: 40px;
+	  line-height: 100px;
+	  text-align: center;
+	  cursor:pointer;
+	  }
+  .btn .prev{
+	  position: absolute;
+	  left: 0;
+	  top: 50%;
+	  margin-top: -50px;
+	  z-index:2;
+	  }
+  .btn .next{
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  margin-top: -50px;
+	  z-index:2;
+	  }
+  .num .active{background-color: #fff;}
+  
+  
+  #searchhead{
+	  position:absolute;
+	  width:430px;
+	  height:100px;
+	  margin-top:250px;
+	  margin-left:300px;
+	  background:#635E54;
+	  opacity:0.85;
+	  z-index:2;
+	  border-radius:8px;
+	  }
+  #chosebox{
+	  position:absolute;
+	  margin-top:265px;
+	  margin-left:330px;
+	  z-index:3;
+	  }
+  #searchbox{
+	  position:absolute;
+	  margin-top:20px;
+	  margin-left:0px;
+	  z-index:3;
+	  }
+  #searchbox #searchimg{
+	  position:absolute;
+	  margin-left:10px;
+	  z-index:3;
+	  }
+  #searchtxt{
+	   height:30px; 
+	   color:#626262;
+	   border-radius:7px;
+	   border:0px;
+	  }
+
+
+  #yearHot{
+	  text-align:center;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:25px;
+	  margin-top:-60px;
+	  }
+  #yearhead{
+	  margin-top:-20px;
+	  text-align:center;
+	  }
+  #yearhead span{
+	  padding:15px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #yearHot1 {
+	  margin-left:15px;}
+  #yearHot2 {
+	  margin-left:15px;}
+  #yearHot1 img{
+	  width:313px;
+	  height:230px;
+	  margin-top:75px;
+	  margin-left:5px;
+	  }  
+  #yearHot2 img{
+	   width:232px;
+	  height:200px;
+	  margin-top:15px;
+	  margin-left:5px;
+
+	  }
+	  
+   #foryou{
+	  text-align:center;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:25px;
+	  margin-top:60px;
+	  }
+  #foryoustyle{
+	  margin-top:-30px;
+	  text-align:center;
+	  }
+  #foryoustyle span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #foryouimg img{
+	  width:232px;
+	  height:200px;
+	  margin-top:70px;
+	  } 
+  #foryouimg{
+	  margin-left:25px;} 
+	  
+	  
+  #hotel{
+	  text-align:center;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:25px;
+	  margin-top:60px;
+	  }
+  #hotelstyle{
+	  margin-top:-30px;
+	  text-align:center;
+	  }
+  #hotelstyle span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #hotelimg1 img{
+	  width:313px;
+	  height:230px;
+	  margin-top:70px;
+	  }
+  #hotelimg1{
+	  margin-left:25px;} 
+  #hotelimg2{
+	  margin-left:25px;} 
+  #hotelimg2 img{
+	  width:313px;
+	  height:230px;
+	  margin-top:15px;
+	  }
+	  
+
+    #notes{
+	  text-align:center;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:25px;
+	  margin-top:60px;
+	  }
+  #notesstyle{
+	  margin-top:-30px;
+	  text-align:center;
+	  }
+  #notesstyle span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #notesimg1 img{
+	  width:313px;
+	  height:230px;
+	  margin-top:70px;
+	  }  
+  #notesimg2 img{
+	   width:313px;
+	  height:230px;
+	  margin-top:15px;
+	  }
+  #notesimg1{
+	  margin-left:25px;}
+  #notesimg2{
+	  margin-left:25px;}
+	  
+	  
+	   .titleline{
+		position:relative;
+		top:50px;
+		font-size:16px;
+		color:#6C6C6C;
+		font-family:黑体;
+		}
+		span{
+			padding:10px;
+			letter-spacing:5px;}
+	#guide a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+	   #guide a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;}
+    .months{
+		position:relative;
+		top:50px;
+		font-size:16px;
+		color:#6C6C6C;
+		font-family:黑体;
+		}
+		span{
+			padding:10px;
+			letter-spacing:5px;}
+	#yearhead a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#yearhead a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;}
+	  
+	  #foryoustyle a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+	  #foryoustyle a:hover{
+		padding:10px;
+		color:white;
+		background-color:#FF9D00;} 
+	  #hotelstyle a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#hotelstyle a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;} 
+			
+	 #notesstyle a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		 #notesstyle a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;} 
+			
+	   
+   .tab{
+	 margin:0px;
+	 padding:0px;
+	 list-style:none;
+	 line-height:30px;
+	 }
+   #buttom{
+	 height:360px;
+	 width:1000px;
+	 background-color:#3E3E3E;
+	 color:#7A7A7A;
+	 font-size:14px;
+	 margin-top:60px;
+	 }	 
+   #second{
+	 float:left;
+	 font-size:13px;
+	 margin-left:110px;
+	 margin-top:50px;
+	 width:300px;
+	 height:200px;
+	 }
+   .color{
+	 margin-left:-10px;
+	 color:#FF9900;
+	 }	
+
+   #one{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	 margin-top:50px;
+	 margin-left:-60px;
+	 }
+   #one1{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	 margin-top:50px;
+	 }	
+   #but4{
+	 position:absolute;
+	 font-size:13px;
+	 float:left;
+	 margin-top:70px;
+	 }
+   #two{
+	 float:left;
+	 font-size:13px;
+	 margin-top:50px;
+	 margin-left:30px;
+	 width:300px;
+	 height:200px;
+	 }
+  #logo{
+	float:left;
+	position:absolute;
+	margin-left:220px;
+	margin-top:280px;
+	}
+  #but1{
+	float:left;
+	position:absolute;
+	font-size:10px;
+	margin-left:300px;
+	margin-top:310px;
+	}	
+  #main{
+	  width:1000px;}
+</style>
+</head>
+
+<body>
+  <div id="content">
+  
+  <!--导航-->
+      <img src="images/logo.png">
+      <div id="guide"> 
+        <span id="first" class="titleline"><a href="#">首页</a></span>
+        <span class="titleline" id="where"><a href="where.html">去哪里</a></span> 
+        <span class="titleline" id="how"><a href="how.html">怎么去</a></span> 
+        <span class="titleline" id="live"><a href="live.html">住哪里</a></span> 
+        <span class="titleline" id="friends"><a href="chat.html">游友圈</a></span>
+        </div>
+        <div id="shares">
+          <img id="share" src="images/qq.png" width="10%">
+          <img id="share" src="images/weibo.png" width="10%"> 
+          <img id="share" src="images/weixin.png" width="10%">
+          </div>
+          <div id="log"><a id="login" href="login.html">登录</a> | <a id="login" href="注册.html">注册</a></div>
+         
+    
+    <!--轮播图-->
+    <div class="banner">
+ <ul class="img">
+  <li><a href="#"><img src="images/1.jpg" width="1000" height="450"></a></li>
+  <li><a href="#"><img src="images/2.jpg" width="1000" height="450"></a></li>
+  <li><a href="#"><img src="images/2.jpg" width="1000" height="450"></a></li>
+  <li><a href="#"><img src="images/4.jpg" width="1000" height="450"></a></li>
+  <li><a href="#"><img src="images/5.jpg" width="1000" height="450"></a></li>
+ </ul>
+ <ul class="num"></ul> //
+ <div class="btn">
+  <span class="prev"><</span>
+  <span class="next">></span>
+ </div>
+   
+   <!--搜索框-->
+   <div id="searchhead"></div>
+     <div id="chosebox">
+       <input type="radio" name="rad" checked> 全部
+       <input type="radio" name="rad"> 酒店
+       <input type="radio" name="rad"> 目的地
+       <input type="radio" name="rad"> 交通
+       <div id="searchbox">
+       <input type="text" size="42" id="searchtxt" placeholder=" 搜目的地/攻略/酒店/旅行特价"/><img src="images/search1.png" id="searchimg">
+     </div>
+   </div>
+</div>
+<div id="main">    
+<!--每月热门-->
+<div id="yearHot">每月热门</div>
+ <div id="yearhead">
+    <span class="months"><a href="#">1月</a></span>
+    <span class="months"><a href="#">2月</a></span>
+    <span class="months"><a href="#">3月</a></span>
+    <span class="months"><a href="#">4月</a></span>
+    <span class="months"><a href="#">5月</a></span>
+    <span class="months"><a href="#">6月</a></span>
+    <span class="months"><a href="#">7月</a></span>
+    <span class="months"><a href="#">8月</a></span>
+    <span class="months"><a href="#">9月</a></span>
+    <span class="months"><a href="#">10月</a></span>
+    <span class="months"><a href="#">11月</a></span>
+    <span class="months"><a href="#">12月</a></span>
+ </div> 
+ <div id="yearHot1">
+    <img src="images/澳大利亚.jpg">
+    <img src="images/土耳其.jpg">
+    <img src="images/香格里拉.jpg">
+ </div>
+ <div id="yearHot2">
+    <img src="images/西宁.jpg">
+    <img src="images/珠海.jpg">
+    <img src="images/稻城.jpg">
+    <img src="images/更多.jpg">
+ </div>
+  
+  
+ <!--为您推荐-->
+<div id="foryou">为您推荐</div>
+ <div id="foryoustyle">
+    <span class="months"><a href="#">全年适宜</a></span>
+    <span class="months"><a href="#">季节</a></span>
+    <span class="months"><a href="#">出行方式</a></span>
+    <span class="months"><a href="#">节假日</a></span>
+ </div> 
+ <div id="foryouimg">
+    <img src="images/徒步.jpg">
+    <img src="images/骑行.jpg">
+    <img src="images/游轮.jpg">
+    <img src="images/自驾.jpg">
+ </div> 
+ 
+ <!--主题酒店-->
+<div id="hotel">主题酒店</div>
+ <div id="hotelstyle">
+    <span class="months"><a href="#">私人海滩</a></span>
+    <span class="months"><a href="#">目的地特色</a></span>
+    <span class="months"><a href="#">潜水胜地</a></span>
+    <span class="months"><a href="#">童话小镇</a></span>
+    <span class="months"><a href="#">朝拜历史</a></span>
+ </div> 
+ <div id="hotelimg1">
+    <img src="images/首尔韩屋.jpg">
+    <img src="images/京都町屋.jpg">
+    <img src="images/洞穴酒店.jpg">
+ </div>
+ <div id="hotelimg2">
+    <img src="images/大理民居.jpg">
+    <img src="images/四合院.jpg">
+    <img src="images/北海道温泉.jpg">
+ </div>
+ 
+  <!--热门游记-->
+<div id="notes">热门游记</div>
+ <div id="notesstyle">
+    <span class="months"><a href="#">精华</a></span>
+    <span class="months"><a href="#">美图</a></span>
+    <span class="months"><a href="#">实用</a></span>
+    <span class="months"><a href="#">典藏</a></span>
+ </div> 
+ <div id="notesimg1">
+    <img src="images/白墙灰瓦雨如烟，我伴清风下江南.jpg">
+    <img src="images/彩云之南的行走-遇见丽江.jpg">
+    <img src="images/波西米亚的风吹来童话的味道（捷克）.jpg">
+ </div>
+ <div id="notesimg2">
+    <img src="images/春田花花，婺里看花，三清仙踪.jpg">
+    <img src="images/人在囧途，越南以南，惊喜与意外的旅途-.jpg">
+    <img src="images/青海，被上帝擦拭过的眼睛.jpg">
+ </div>
+</div>
+  
+    <div id="buttom">
+  <div id="second">
+   <ul class="tab">
+    <li>中国领先的自由服务平台</li>
+    <li>覆盖全球200多个国家和地区</li>
+    <li><span class="color">1000,100,100</span>位旅行者</li>
+    <li><span class="color">920,000</span>家国际酒店</li>
+    <li><span class="color">21,000,000</span>条真实点评</li>
+    <li><span class="color">382,000,000</span>次攻略下载</li>
+    <li><span class="color">中国旅游行业第一部“玩法”</span></li>
+   </ul>
+  </div>
+  <div id="two">
+   <ul class="tab">
+    <li>关于我们</li>
+    <li>关于出去看看</li>
+    <li>网络信息侵权通知指引</li>
+    <li>隐私政策</li>
+    <li>服务协议</li>
+    <li>联系我们</li>
+    <li><span class="color">加入看看</span></li>
+   </ul>
+  </div>
+   
+   <div id="one">
+    <ul class="tab">
+     <li>旅游攻略</li>
+     <li>旅游特价</li>
+     <li>旅游问答</li>
+     <li>旅游指南</li>
+     <li>旅游资讯</li>
+     <li>旅行服务</li>
+    </ul>
+   </div>
+   <div id="one1">
+    <ul class="tab">
+     <li>酒店预订</li>
+     <li>国际租车</li>
+     <li>旅游保险</li>
+     <li>订火车票</li>
+     <li>APP下载</li>
+    </ul>
+   </div>
+   <div id="but4" style="margin-left:777px;margin-top:205px;"><span class="color">全球供应商入住</span></div>
+   
+   <div id="logo"><img src="images/logo.png"/></div>
+   <div id="but1">© 2017 Chuqukankan.cn 京丨CP备 京东网安备11015476号 京丨CP证110318号<br/>
+   营业执照 新网出证（京）字242号 全国统一客服电话：<span class="color">4006—345—678 网站地图</span></div>
+ </div>
+   </div>
+  
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>  
+ <script>
+ $(function(){
+	 
+	 //轮播图效果
+  var i=0;
+  var timer=null;
+  for (var j = 0; j < $('.img li').length; j++) { //创建圆点
+   $('.num').append('<li></li>')
+  }
+  $('.num li').first().addClass('active'); //给第一个圆点添加样式
+  
+  var firstimg=$('.img li').first().clone(); //复制第一张图片
+  $('.img').append(firstimg).width($('.img li').length*($('.img img').width())); //将第一张图片放到最后一张图片后，设置ul的宽度为图片张数*图片宽度
+  
+  
+  // 下一个按钮
+  $('.next').click(function(){
+   i++;
+   if (i==$('.img li').length) {
+    i=1; //这里不是i=0
+    $('.img').css({left:0}); //保证无缝轮播，设置left值
+   };
+  
+   $('.img').stop().animate({left:-i*1000},450);
+   if (i==$('.img li').length-1) {  //设置小圆点指示
+    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+   }else{
+    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+   }
+     
+  })
+  
+  // 上一个按钮
+  $('.prev').click(function(){
+   i--;
+   if (i==-1) {
+    i=$('.img li').length-2;
+    $('.img').css({left:-($('.img li').length-1)*1000});
+   }
+   $('.img').stop().animate({left:-i*1000},450);
+   $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+  })
+  
+  //设置按钮的显示和隐藏
+  $('.banner').hover(function(){
+   $('.btn').show();
+  },function(){
+   $('.btn').hide();
+  })
+  
+  //鼠标划入圆点
+  $('.num li').mouseover(function(){
+   var _index=$(this).index();
+   $('.img').stop().animate({left:-_index*1000},450);
+   $('.num li').eq(_index).addClass('active').siblings().removeClass('active');
+  })
+  
+  //定时器自动播放
+  timer=setInterval(function(){
+   i++;
+   if (i==$('.img li').length) {
+    i=1;
+    $('.img').css({left:0});
+   };
+  
+   $('.img').stop().animate({left:-i*1000},450);
+   if (i==$('.img li').length-1) { 
+    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+   }else{
+    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+   }
+  },2000)
+  
+  //鼠标移入，暂停自动播放，移出，开始自动播放
+  $('.banner').hover(function(){ 
+   clearInterval(timer);
+  },function(){
+   timer=setInterval(function(){
+   i++;
+   if (i==$('.img li').length) {
+    i=1;
+    $('.img').css({left:0});
+   };
+  
+   $('.img').stop().animate({left:-i*1000},450);
+   if (i==$('.img li').length-1) { 
+    $('.num li').eq(0).addClass('active').siblings().removeClass('active');
+   }else{
+    $('.num li').eq(i).addClass('active').siblings().removeClass('active');
+   }
+  },2000)
+  });
+ });
+ 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>出去看看自由行</title>
+<style>
+  #content{
+	  border:1px solid red;
+	  height:1500px;
+	  width:1000px;
+	  margin:0px auto;
+      }
+  #go{
+	  background-color:#FF9D01;}
+  #guide{
+	  margin-top:-90px;
+	  margin-left:130px;}
+  span{
+	  padding-left:25px;
+	  padding-right:25px;
+	  padding-top:10px;
+	  padding-bottom:10px;
+	  margin-left:15px;	  
+	  text-align:center;
+	  }
+  #log{
+	  font-size:14px;
+	  margin-top:-25px;
+	  margin-left:170px;
+	  color:#FF9D01;}
+  #login{
+	  color:#FF9D01;
+	  text-decoration:none;}
+  #shares{
+	  margin-top:23px;
+      margin-left:670px;
+	  }
+  #share{
+	  margin-left:7px;}
+	  
+  #hr1{
+	  color:blue;
+	  margin-top:55px;
+	  }
+  
+  #headline{
+	  text-align:center;
+	  margin-top:30px;
+	  }
+  #headline a{
+	  color:#626262;
+	  text-decoration:none;
+	  }
+  .incountry{
+	  color:orange;
+	  }
+  
+  #single{
+	  position:absolute;
+	  margin-top:10px;
+	  margin-left:60px;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:20px;
+	  }  
+  #double{
+	  width:150px;
+	  height:40px;
+	  text-align:center;
+	  margin-left:155px;
+	  padding-top:9px;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:20px;
+	  background-color:#999;
+	  } 
+  #ticket{
+	  border:1px solid #CCC;
+	  float:left;
+	  height:350px;
+	  margin-top:30px;
+	  margin-left:55px;
+	  }
+  #ticket img{
+	  width:100px;
+	  height:30px;
+	  margin-left:85px;
+	  }
+  #img{
+	  float:left;
+	  width:100px;
+	  height:20px;
+	  margin-top:30px;
+	  margin-left:50px;
+	  }
+  #search{
+	  margin-top:5px;
+	  }
+  #start,#arrive,#dates{
+	  height:25px;
+	  }
+	  
+
+  #flyticket{
+	  text-align:center;
+	  color:#626262;
+	  font-family:黑体;
+	  font-size:25px;
+	  margin-top:-900px;
+	  }
+  #ticketcity{
+	  margin-top:250px;
+	  text-align:center;
+	  }
+  #ticketcity span{
+	  padding:20px;
+	  font-size:15px;
+	  font-family:黑体;
+	  color:#626262;
+	  }
+  #ticketrecom{
+	  position:absolute;
+	  height:300px;
+	  width:1200px;
+	  margin-top:0px;
+	  margin-left:189px;
+	  }
+  #ticketrecom img{
+	  width:313px;
+	  height:230px;
+	  margin-top:30px;
+	  } 
+	  
+	  
+  #left{
+	  float:left;
+	  margin-left:200px;
+	  margin-top:100px;
+	  }
+  #medium{
+	  float:left;
+	  margin-left:200px;
+	  margin-top:-130px;
+	  }
+  #right{
+	  float:left;
+	  margin-left:890px;
+	  margin-top:-140px;
+	  
+	  } 
+  #hr2{
+	  width:1px;
+	  height:130px;
+	  margin-left:490px;
+	  margin-top:95px;
+	  }
+  #hr3{
+	  width:1px;
+	  height:130px;
+	  margin-left:860px;
+	  margin-top:-140px;
+	  }  
+  #shanghai{
+	  background:orange;
+	  }
+	  
+   .titleline{
+		position:relative;
+		top:50px;
+		font-size:16px;
+		color:#6C6C6C;
+		font-family:黑体;
+		}
+		span{
+			padding:10px;
+			letter-spacing:5px;}
+	#guide a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#guide a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;}
+	  
+	  #ticketcity a{
+		color:#6C6C6C;
+		text-decoration:none;
+		font-family:黑体;}
+		#ticketcity a:hover{
+			padding:10px;
+			color:white;
+			background-color:#FF9D00;} 
+			
+
+
+   .tab{
+	 margin:0px;
+	 padding:0px;
+	 list-style:none;
+	 line-height:30px;
+	 }
+ #buttom{
+	 height:380px;
+	 width:1350px;
+	 background-color:#3E3E3E;
+	 color:#7A7A7A;
+	 font-size:14px;
+	 margin-left:-10px;
+	 margin-top:30px;
+	 }	 
+ #second{
+	 float:left;
+	 font-size:13px;
+	 margin-left:310px;
+	 margin-top:50px;
+	 width:300px;
+	 height:200px;
+	 }
+ .color{
+	 margin-left:-10px;
+	 color:#FF9900;
+	 }	
+
+ #one{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	  margin-top:90px;
+	  margin-left:-40px;
+	 }
+ #one1{
+	 float:left;
+	 font-size:13px;
+	 width:100px;
+	 margin-top:90px;
+	 }	
+ #service{
+	 position:absolute;
+	 font-size:13px;
+	 width:60px;
+	 margin-top:50px;
+	 margin-left:950px;
+	 } 
+ #but4{
+	 position:absolute;
+	 font-size:13px;
+	 float:left;
+	 margin-top:70px;
+	 }
+ #two{
+	 float:left;
+	 font-size:13px;
+	 margin-top:50px;
+	 margin-left:30px;
+	 width:300px;
+	 height:200px;
+	 }
+#logo{
+	float:left;
+	position:absolute;
+	margin-left:420px;
+	margin-top:280px;
+	}
+#but1{
+	float:left;
+	position:absolute;
+	font-size:10px;
+	margin-left:500px;
+	margin-top:310px;
+	}		
+</style>
+</head>
+
+<body>
+  <div id="content">
+      <img src="images/logo.png">
+      <div id="guide"> 
+        <span class="titleline"><a href="index.html">首页</a></span>
+        <span class="titleline"><a href="where.html">去哪里</a></span> 
+        <span id="go" class="titleline"><a href="how.html">怎么去</a></span> 
+        <span class="titleline"><a href="live.html">住哪里</a></span> 
+        <span class="titleline"><a href="chat.html">游友圈</a></span>
+        </div>
+        <div id="shares">
+          <img id="share" src="images/qq.png" width="10%">
+          <img id="share" src="images/weibo.png" width="10%"> 
+          <img id="share" src="images/weixin.png" width="10%">
+          <div id="log"><a id="login" href="login.html">登录</a> | <a id="login" href="sign.html">注册</a></div>
+    </div> 
+    
+    <hr id="hr1"/>
+    
+    <div id="headline"><a href="#">机票+酒店</a>  |  <a href="#" class="incountry">国内机票</a>  |  <a href="#">国际航班</a>  |  <a href="#">游轮</a>  |  <a href="#">火车票</a>  |  <a href="#">巴士票</a></div>
+    
+    
+    <div id="ticket">
+    <div id="single">单程</div>
+    <div id="double">往返</div><br/><br/>
+    &nbsp出发城市 &nbsp <input type="text" size="25" id="start" /><br/><br/><br/>
+    &nbsp到达城市 &nbsp <input type="text" size="25" id="arrive" /><br/><br/><br/>
+    &nbsp出发日期 &nbsp <input type="text" size="25" id="dates" /><br/><br/><br/>
+   <img src="imagesgo/search.png" id="search">
+    </div>
+    
+    <div id="img">
+      <img src="imagesgo/1.jpg" width="500">
+    </div>
+    </div>
+    
+    
+     <!--特价机票-->
+<div id="flyticket">特价机票</div>
+ <div id="ticketrecom">
+    <img src="imagesgo/北青.jpg">
+    <img src="imagesgo/北西.jpg">
+    <img src="imagesgo/北南.jpg">
+ </div> 
+ <div id="ticketcity">
+    <span class="titleline"><a href="#">北京</a></span>
+    <span class="titleline" id="shanghai"><a href="#">上海</a></span>
+    <span class="titleline"><a href="#">广州</a></span>
+    <span class="titleline"><a href="#">深圳</a></span>
+    <span class="titleline"><a href="#">成都</a></span>
+    <span class="titleline"><a href="#">杭州</a></span>
+    <span class="titleline"><a href="#">重庆</a></span>
+    <span class="titleline"><a href="#">南京</a></span>
+    <span class="titleline"><a href="#">武汉</a></span>
+ </div> 
+ <div id="left">
+    上海-南京&nbsp;&nbsp;&nbsp;1.3折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥105</font><br/><br/>
+    上海-温州&nbsp;&nbsp;&nbsp;1.8折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥265</font><br/><br/>
+    上海-合肥&nbsp;&nbsp;&nbsp;1.9折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥175</font><br/><br/>
+    上海-南宁&nbsp;&nbsp;&nbsp;2折&nbsp;&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥315</font><br/>
+ </div>
+ <hr id="hr2"/>
+ <div id="medium">
+    上海-武汉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥195</font><br/><br/>
+    上海-昆明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.9折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥425</font><br/><br/>
+    上海-哈尔滨&nbsp;&nbsp;&nbsp;&nbsp;1.9折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥325</font><br/><br/>
+    上海-北海&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2折&nbsp;&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥305</font><br/>
+ </div>
+ <hr id="hr3"/>
+ <div id="right">
+    上海-天津&nbsp;&nbsp;&nbsp;1.7折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥285</font><br/><br/>
+    上海-兰州&nbsp;&nbsp;&nbsp;1.9折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥325</font><br/><br/>
+    上海-海口&nbsp;&nbsp;&nbsp;1.9折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥306</font><br/><br/>
+    上海-丽江&nbsp;&nbsp;&nbsp;2.1折&nbsp;&nbsp;&nbsp;<font face="黑体" color="orange">￥555</font><br/>
+ </div>
+ 
+ 
+   <div id="buttom">
+  <div id="second">
+   <ul class="tab">
+    <li>中国领先的自由服务平台</li>
+    <li>覆盖全球200多个国家和地区</li>
+    <li><span class="color">1000,100,100</span>位旅行者</li>
+    <li><span class="color">920,000</span>家国际酒店</li>
+    <li><span class="color">21,000,000</span>条真实点评</li>
+    <li><span class="color">382,000,000</span>次攻略下载</li>
+    <li><span class="color">中国旅游行业第一部“玩法”</span></li>
+   </ul>
+  </div>
+  <div id="two">
+   <ul class="tab">
+    <li>关于我们</li>
+    <li>关于出去看看</li>
+    <li>网络信息侵权通知指引</li>
+    <li>隐私政策</li>
+    <li>服务协议</li>
+    <li>联系我们</li>
+    <li><span class="color">加入看看</span></li>
+   </ul>
+  </div>
+   
+   <div id="service">旅行服务</div>
+   <div id="one">
+    <ul class="tab">
+     <li>旅游攻略</li>
+     <li>旅游特价</li>
+     <li>旅游问答</li>
+     <li>旅游指南</li>
+     <li>旅游资讯</li>
+    </ul>
+   </div>
+   <div id="one1">
+    <ul class="tab">
+     <li>酒店预订</li>
+     <li>国际租车</li>
+     <li>旅游保险</li>
+     <li>订火车票</li>
+     <li>APP下载</li>
+    </ul>
+   </div>
+   <div id="but4" style="margin-left:920px;margin-top:250px;"><span class="color">全球供应商入住</span></div>
+   
+   <div id="logo"><img src="images/logo.png"/></div>
+   <div id="but1">© 2017 Chuqukankan.cn 京丨CP备 京东网安备11015476号 京丨CP证110318号<br/>
+   营业执照 新网出证（京）字242号 全国统一客服电话：<span class="color">4006—345—678 网站地图</span></div>
+ </div>
+ 
+</div>
+  
+  
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+ 
+</script>
+</body>
+</html>
+
